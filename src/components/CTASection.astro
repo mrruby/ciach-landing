@@ -1,0 +1,63 @@
+---
+import Button from './Button.astro';
+---
+
+<section class="py-20 md:py-32 relative">
+  <!-- Background glows -->
+  <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[150px] -z-10"></div>
+  <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-accent/20 rounded-full blur-[120px] -z-10"></div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
+        <!-- Sparkles icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-primary">
+          <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+          <path d="M20 3v4"/>
+          <path d="M22 5h-4"/>
+          <path d="M4 17v2"/>
+          <path d="M5 18H3"/>
+        </svg>
+        <span class="text-sm text-primary font-medium">3 darmowe generacje na start</span>
+      </div>
+
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
+        Gotowy zobaczyć swoją{" "}
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+          nową fryzurę
+        </span>
+        ?
+      </h2>
+
+      <p class="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 text-pretty">
+        Dołącz do tysięcy osób, które przed wizytą u fryzjera sprawdzają jak będą wyglądać z nową fryzurą.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <Button
+          href="https://app.ciachnaprobe.pl/"
+          size="lg"
+          class="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-14 text-lg group"
+        >
+          Zacznij teraz
+          <!-- ArrowRight icon -->
+          <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/>
+            <path d="m12 5 7 7-7 7"/>
+          </svg>
+        </Button>
+        <Button
+          size="lg"
+          variant="outline"
+          class="border-border bg-transparent hover:bg-secondary/50 text-foreground px-8 h-14 text-lg"
+        >
+          Pobierz aplikację
+        </Button>
+      </div>
+
+      <p class="text-sm text-muted-foreground mt-8">
+        Bez karty kredytowej • Rejestracja w 30 sekund
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,122 @@
+---
+import Button from './Button.astro';
+
+const navItems = [
+  { label: "Jak to działa", href: "#jak-to-dziala" },
+  { label: "Funkcje", href: "#funkcje" },
+  { label: "Cennik", href: "#cennik" },
+  { label: "FAQ", href: "#faq" },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Checkbox for CSS-only toggle - must be first for sibling selectors -->
+    <input type="checkbox" id="mobile-menu-toggle" class="peer hidden" />
+
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="relative w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center border border-primary/30 group-hover:bg-primary/30 transition-colors">
+          <!-- Scissors icon -->
+          <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="6" r="3"/>
+            <path d="M8.12 8.12 12 12"/>
+            <path d="M20 4 8.12 15.88"/>
+            <circle cx="6" cy="18" r="3"/>
+            <path d="M14.8 14.8 20 20"/>
+          </svg>
+        </div>
+        <span class="text-xl font-bold text-foreground">
+          Ciach<span class="text-primary">Na</span>Próbę
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <!-- CTA Buttons (Desktop) -->
+      <div class="hidden md:flex items-center gap-3">
+        <Button variant="ghost" class="text-muted-foreground hover:text-foreground">
+          Zaloguj się
+        </Button>
+        <Button href="https://app.ciachnaprobe.pl/" class="bg-primary hover:bg-primary/90 text-primary-foreground">
+          Wypróbuj za darmo
+        </Button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <label for="mobile-menu-toggle" class="mobile-menu-btn md:hidden p-2 text-foreground cursor-pointer z-10">
+        <!-- Menu icon -->
+        <svg class="menu-icon w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"/>
+          <line x1="4" x2="20" y1="6" y2="6"/>
+          <line x1="4" x2="20" y1="18" y2="18"/>
+        </svg>
+        <!-- Close icon -->
+        <svg class="close-icon w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"/>
+          <path d="m6 6 12 12"/>
+        </svg>
+      </label>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu md:hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out">
+      <div class="overflow-hidden">
+        <div class="flex flex-col gap-4 py-4 border-t border-border">
+          {navItems.map((item) => (
+            <a
+              href={item.href}
+              class="mobile-link text-muted-foreground hover:text-foreground transition-colors py-2"
+            >
+              {item.label}
+            </a>
+          ))}
+          <div class="flex flex-col gap-2 pt-4 border-t border-border">
+            <Button variant="ghost" class="justify-start text-muted-foreground">
+              Zaloguj się
+            </Button>
+            <Button href="https://app.ciachnaprobe.pl/" class="bg-primary hover:bg-primary/90 text-primary-foreground">
+              Wypróbuj za darmo
+            </Button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  /* When checkbox is checked, show close icon and hide menu icon */
+  #mobile-menu-toggle:checked ~ div .mobile-menu-btn .menu-icon {
+    display: none;
+  }
+  #mobile-menu-toggle:checked ~ div .mobile-menu-btn .close-icon {
+    display: block;
+  }
+
+  /* When checkbox is checked, expand mobile menu */
+  #mobile-menu-toggle:checked ~ .mobile-menu {
+    grid-template-rows: 1fr;
+  }
+</style>
+
+<script>
+  // Close mobile menu when clicking a nav link
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const toggle = document.getElementById('mobile-menu-toggle') as HTMLInputElement;
+      if (toggle) toggle.checked = false;
+    });
+  });
+</script>

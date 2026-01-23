@@ -1,0 +1,71 @@
+---
+const faqs = [
+  {
+    question: "Jak działa generowanie fryzury?",
+    answer: "Nasz model AI analizuje Twoje selfie oraz opis lub zdjęcie inspiracji, a następnie tworzy realistyczną wizualizację nowej fryzury nałożoną na Twoją twarz. Cały proces trwa zaledwie kilka sekund.",
+  },
+  {
+    question: "Czy moje zdjęcia są bezpieczne?",
+    answer: "Tak, bezpieczeństwo Twoich danych jest naszym priorytetem. Zdjęcia są przetwarzane tylko na potrzeby generowania wizualizacji i nie są przechowywane dłużej niż to konieczne. Nie udostępniamy ich osobom trzecim.",
+  },
+  {
+    question: "Jak mogę opisać wymarzoną fryzurę?",
+    answer: "Masz trzy opcje: możesz wpisać opis tekstowy (np. \"krótki bob z grzywką\"), nagrać opis głosowy lub dodać zdjęcie inspiracji z galerii, Pinteresta czy zdjęcie celebryty. Możesz też łączyć te metody.",
+  },
+  {
+    question: "Ile kosztuje korzystanie z aplikacji?",
+    answer: "Rejestracja jest bezpłatna i otrzymujesz 3 darmowe kredyty na start. Każdy kredyt to jedna generacja fryzury. Gdy potrzebujesz więcej, możesz dokupić paczkę 15 kredytów za 29 zł.",
+  },
+  {
+    question: "Na jakich urządzeniach działa aplikacja?",
+    answer: "CiachNaPróbę działa na telefonach z systemem iOS i Android oraz w przeglądarce internetowej na komputerze. Możesz korzystać z aplikacji na dowolnym urządzeniu.",
+  },
+  {
+    question: "Czy mogę pokazać wynik fryzjerowi?",
+    answer: "Oczywiście! Możesz pobrać wygenerowaną wizualizację do galerii telefonu i pokazać ją fryzjerowi podczas wizyty. To świetny sposób na dokładne przekazanie swojej wizji.",
+  },
+];
+---
+
+<section id="faq" class="py-20 md:py-32 relative">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        Często zadawane pytania
+      </h2>
+      <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+        Masz pytania? Znajdź odpowiedzi poniżej
+      </p>
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-4">
+      {faqs.map((faq, index) => (
+        <details
+          class="group bg-card/50 border border-border rounded-xl px-6 transition-colors open:border-primary/50"
+        >
+          <summary class="flex items-start justify-between gap-4 py-5 cursor-pointer text-left text-foreground hover:text-primary transition-colors font-medium">
+            <span>{faq.question}</span>
+            <!-- Chevron icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="chevron-icon w-4 h-4 text-muted-foreground shrink-0 mt-1 transition-transform duration-200"
+            >
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </summary>
+          <div class="text-muted-foreground pb-5 leading-relaxed">
+            {faq.answer}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
