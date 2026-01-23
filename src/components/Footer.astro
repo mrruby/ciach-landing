@@ -50,7 +50,7 @@ const currentYear = new Date().getFullYear();
       <!-- Links -->
       {Object.entries(footerLinks).map(([title, links]) => (
         <div>
-          <h4 class="font-semibold text-foreground mb-4">{title}</h4>
+          <p class="font-semibold text-foreground mb-4">{title}</p>
           <ul class="space-y-3">
             {links.map((link) => (
               <li>
