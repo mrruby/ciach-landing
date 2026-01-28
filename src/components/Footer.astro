@@ -1,9 +1,9 @@
 ---
 const footerLinks = {
   Produkt: [
-    { label: "Funkcje", href: "#funkcje" },
-    { label: "Cennik", href: "#cennik" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Funkcje", href: "/#funkcje" },
+    { label: "Cennik", href: "/#cennik" },
+    { label: "FAQ", href: "/#faq" },
     { label: "Otwórz aplikację", href: "https://app.ciachnaprobe.pl/" },
   ],
   Firma: [
@@ -13,9 +13,8 @@ const footerLinks = {
     { label: "Kariera", href: "#" },
   ],
   Prawne: [
-    { label: "Regulamin", href: "#" },
-    { label: "Polityka prywatności", href: "#" },
-    { label: "Cookies", href: "#" },
+    { label: "Regulamin", href: "/regulamin" },
+    { label: "Polityka prywatności i cookies", href: "/polityka-cookies" },
   ],
 };
 
@@ -27,7 +26,7 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
       <!-- Logo & Description -->
       <div class="col-span-2 md:col-span-1">
-        <a href="#" class="flex items-center gap-2 mb-4">
+        <a href="/" class="flex items-center gap-2 mb-4">
           <div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center border border-primary/30">
             <!-- Scissors icon -->
             <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

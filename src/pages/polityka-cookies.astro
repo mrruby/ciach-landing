@@ -1,0 +1,472 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Polityka prywatności i plików cookies - CiachNaPróbę"
+  description="Polityka prywatności i plików cookies serwisu Ciach Na Próbę. Dowiedz się jak przetwarzamy dane osobowe i wykorzystujemy pliki cookies."
+>
+  <main class="min-h-screen bg-background overflow-hidden">
+    <div class="fixed inset-0 bg-[linear-gradient(180deg,#12002B_0%,#2A0F54_50%,#12002B_100%)] -z-10"></div>
+    <Header />
+
+    <article class="pt-32 pb-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <header class="mb-12 text-center">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            Polityka prywatności i plików cookies
+          </h1>
+          <p class="text-lg text-muted-foreground">
+            CiachNaPróbę
+          </p>
+          <p class="text-sm text-muted-foreground mt-4">
+            Data ostatniej aktualizacji: 28.01.2026
+          </p>
+        </header>
+
+        <div class="prose prose-invert max-w-none">
+          <p class="text-muted-foreground leading-relaxed mb-8">
+            Dzień dobry!
+          </p>
+          <p class="text-muted-foreground leading-relaxed mb-8">
+            W tym dokumencie znajdziesz w jednym miejscu zasady przetwarzania danych osobowych oraz wykorzystywania plików cookies i podobnych technologii w związku z korzystaniem z:
+          </p>
+
+          <div class="bg-card/50 border border-border rounded-xl p-6 mb-8">
+            <ul class="text-muted-foreground space-y-2">
+              <li>strony informacyjnej (landing page) CiachNaPróbę: <a href="https://ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://ciachnaprobe.pl/</a></li>
+              <li>aplikacji webowej CiachNaPróbę: <a href="https://app.ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://app.ciachnaprobe.pl/</a></li>
+              <li>płatności realizowanych przez Stripe (m.in. checkout): https://buy.stripe.com/… (dalej: „Stripe Checkout")</li>
+            </ul>
+          </div>
+
+          <p class="text-muted-foreground leading-relaxed mb-12">
+            Jeżeli coś jest niejasne – napisz do mnie: <a href="mailto:adrianna@getbold.agency" class="text-primary hover:text-accent transition-colors">adrianna@getbold.agency</a>
+          </p>
+
+          <!-- Spis treści -->
+          <div class="bg-card/50 border border-border rounded-xl p-6 mb-12">
+            <h2 class="text-xl font-semibold text-foreground mb-4">Spis treści</h2>
+            <ol class="text-muted-foreground space-y-2 list-decimal list-inside">
+              <li><a href="#s1" class="text-primary hover:text-accent transition-colors">Kto jest administratorem danych osobowych?</a></li>
+              <li><a href="#s2" class="text-primary hover:text-accent transition-colors">Z kim możesz się kontaktować w sprawie danych osobowych?</a></li>
+              <li><a href="#s3" class="text-primary hover:text-accent transition-colors">W jakich celach przetwarzamy dane osobowe i na jakiej podstawie?</a></li>
+              <li><a href="#s4" class="text-primary hover:text-accent transition-colors">Jakie dane możemy przetwarzać?</a></li>
+              <li><a href="#s5" class="text-primary hover:text-accent transition-colors">Dane techniczne i logi – czym są i po co je zbieramy?</a></li>
+              <li><a href="#s6" class="text-primary hover:text-accent transition-colors">Skąd mamy Twoje dane?</a></li>
+              <li><a href="#s7" class="text-primary hover:text-accent transition-colors">Jak dbamy o bezpieczeństwo danych?</a></li>
+              <li><a href="#s8" class="text-primary hover:text-accent transition-colors">Jak długo przechowujemy dane?</a></li>
+              <li><a href="#s9" class="text-primary hover:text-accent transition-colors">Komu możemy ujawniać dane (odbiorcy danych)?</a></li>
+              <li><a href="#s10" class="text-primary hover:text-accent transition-colors">Czy przekazujemy dane poza EOG?</a></li>
+              <li><a href="#s11" class="text-primary hover:text-accent transition-colors">Czy korzystamy z profilowania lub zautomatyzowanego podejmowania decyzji?</a></li>
+              <li><a href="#s12" class="text-primary hover:text-accent transition-colors">Jakie masz prawa?</a></li>
+              <li><a href="#s13" class="text-primary hover:text-accent transition-colors">Czym są cookies i podobne technologie?</a></li>
+              <li><a href="#s14" class="text-primary hover:text-accent transition-colors">Na jakiej podstawie korzystamy z cookies?</a></li>
+              <li><a href="#s15" class="text-primary hover:text-accent transition-colors">Jak zarządzać cookies?</a></li>
+              <li><a href="#s16" class="text-primary hover:text-accent transition-colors">Cookies własne – jakie mogą występować?</a></li>
+              <li><a href="#s17" class="text-primary hover:text-accent transition-colors">Cookies i technologie podmiotów trzecich – jakie mogą występować?</a></li>
+              <li><a href="#s18" class="text-primary hover:text-accent transition-colors">Czy „śledzimy" Twoje zachowania na stronie/aplikacji?</a></li>
+              <li><a href="#s19" class="text-primary hover:text-accent transition-colors">Czy kierujemy reklamy targetowane?</a></li>
+              <li><a href="#s20" class="text-primary hover:text-accent transition-colors">Jak możesz zarządzać swoją prywatnością praktycznie?</a></li>
+              <li><a href="#s21" class="text-primary hover:text-accent transition-colors">Czy jest jeszcze coś, o czym warto wiedzieć?</a></li>
+              <li><a href="#s22" class="text-primary hover:text-accent transition-colors">Zmiany w Polityce</a></li>
+            </ol>
+            <p class="text-muted-foreground mt-4">
+              <a href="#zalacznik" class="text-primary hover:text-accent transition-colors">Załącznik: Wykaz narzędzi wykorzystujących cookies (na dzień publikacji)</a>
+            </p>
+          </div>
+
+          <!-- Sekcja 1 -->
+          <section id="s1" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">1. Kto jest administratorem danych osobowych?</h2>
+            <p class="text-muted-foreground mb-4">Administratorem Twoich danych osobowych jest:</p>
+            <div class="bg-card/50 border border-border rounded-xl p-6">
+              <p class="text-muted-foreground">
+                <strong class="text-foreground">Slow Marketing Adrianna Promis-Urbas</strong><br />
+                ul. Mała 2, 47-400 Racibórz, Polska<br />
+                NIP: 6391970911
+              </p>
+            </div>
+            <p class="text-muted-foreground mt-4">
+              W tej Polityce, dla uproszczenia, administrator jest też nazywany „my" albo „Administrator".
+            </p>
+          </section>
+
+          <!-- Sekcja 2 -->
+          <section id="s2" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">2. Z kim możesz się kontaktować w sprawie danych osobowych?</h2>
+            <p class="text-muted-foreground mb-4">
+              Nie wyznaczyliśmy inspektora ochrony danych (IOD), bo nie jest to obowiązkowe w naszej sytuacji.
+            </p>
+            <p class="text-muted-foreground">
+              W sprawach prywatności i danych osobowych pisz na: <a href="mailto:adrianna@getbold.agency" class="text-primary hover:text-accent transition-colors">adrianna@getbold.agency</a>
+            </p>
+          </section>
+
+          <!-- Sekcja 3 -->
+          <section id="s3" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">3. W jakich celach przetwarzamy dane osobowe i na jakiej podstawie?</h2>
+            <p class="text-muted-foreground mb-6">
+              Poniżej opisuję najważniejsze cele przetwarzania danych w ramach CiachNaPróbę – na dziś (bez wdrożonych narzędzi marketingowych/analitycznych po stronie Serwisu/Aplikacji poza tym, co jest niezbędne do działania).
+            </p>
+
+            <div class="space-y-6">
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">A. Korzystanie ze strony ciachnaprobe.pl (landing)</h3>
+                <ul class="text-muted-foreground space-y-2">
+                  <li><strong class="text-foreground">Cel:</strong> wyświetlenie strony, zapewnienie działania, bezpieczeństwo, diagnoza błędów.</li>
+                  <li><strong class="text-foreground">Dane:</strong> adres IP, dane urządzenia/przeglądarki, logi serwera (szczegóły w pkt 5).</li>
+                  <li><strong class="text-foreground">Podstawa prawna:</strong> art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes – utrzymanie i bezpieczeństwo Serwisu).</li>
+                </ul>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">B. Założenie i utrzymywanie konta w app.ciachnaprobe.pl (jeśli dostępne)</h3>
+                <ul class="text-muted-foreground space-y-2">
+                  <li><strong class="text-foreground">Cel:</strong> utworzenie konta, logowanie, weryfikacja e-mail, zarządzanie kredytami.</li>
+                  <li><strong class="text-foreground">Dane:</strong> e-mail, identyfikator konta, dane o kredytach i aktywności w aplikacji, dane techniczne.</li>
+                  <li><strong class="text-foreground">Podstawa prawna:</strong> art. 6 ust. 1 lit. b RODO (umowa / świadczenie usługi drogą elektroniczną).</li>
+                </ul>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">C. Wykonanie usługi „generowania fryzury" (działanie aplikacji)</h3>
+                <ul class="text-muted-foreground space-y-2">
+                  <li><strong class="text-foreground">Cel:</strong> wykonanie generacji (wizualizacji fryzury) oraz udostępnienie Ci wyniku.</li>
+                  <li><strong class="text-foreground">Dane (Treści Użytkownika):</strong> selfie / zdjęcie twarzy, opcjonalnie zdjęcie referencyjne (inspiracja), opis tekstowy, opcjonalnie nagranie głosowe i/lub jego transkrypcja, wygenerowane wyniki.</li>
+                  <li><strong class="text-foreground">Podstawa prawna:</strong> art. 6 ust. 1 lit. b RODO (wykonanie umowy).</li>
+                </ul>
+                <p class="text-muted-foreground mt-4 text-sm italic">
+                  Uwaga: przetwarzamy wizerunek i cechy twarzy wyłącznie w celu wykonania generacji. Nie służy to identyfikacji użytkownika ani weryfikacji tożsamości.
+                </p>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">D. Zakup pakietu kredytów (płatność przez Stripe)</h3>
+                <ul class="text-muted-foreground space-y-2">
+                  <li><strong class="text-foreground">Cel:</strong> obsługa płatności, rozliczenie zakupu i przyznanie kredytów (np. pakiet 15 kredytów).</li>
+                  <li><strong class="text-foreground">Dane:</strong> informacje o zakupie (np. identyfikator płatności, status), e-mail (jeśli podasz w Stripe), dane rozliczeniowe (jeśli występują), podstawowe dane techniczne.</li>
+                  <li><strong class="text-foreground">Podstawa prawna:</strong> art. 6 ust. 1 lit. b RODO (wykonanie umowy) oraz art. 6 ust. 1 lit. c RODO (obowiązki księgowo-podatkowe).</li>
+                </ul>
+                <p class="text-muted-foreground mt-4 text-sm italic">
+                  Dane płatnicze (np. numer karty) są co do zasady przetwarzane bezpośrednio przez Stripe – my nie przechowujemy numeru karty.
+                </p>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">E. Faktury / rozliczenia (jeśli poprosisz o fakturę)</h3>
+                <ul class="text-muted-foreground space-y-2">
+                  <li><strong class="text-foreground">Cel:</strong> wystawienie i przechowywanie dokumentów księgowych.</li>
+                  <li><strong class="text-foreground">Dane:</strong> dane do faktury (imię i nazwisko / firma, adres, NIP – jeśli dotyczy), informacje o zakupie.</li>
+                  <li><strong class="text-foreground">Podstawa prawna:</strong> art. 6 ust. 1 lit. c RODO (obowiązek prawny).</li>
+                </ul>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">F. Kontakt i obsługa korespondencji</h3>
+                <ul class="text-muted-foreground space-y-2">
+                  <li><strong class="text-foreground">Cel:</strong> odpowiedzi na wiadomości, wsparcie, obsługa zgłoszeń.</li>
+                  <li><strong class="text-foreground">Dane:</strong> imię (jeśli podasz), e-mail, treść wiadomości, ewentualne załączniki.</li>
+                  <li><strong class="text-foreground">Podstawa prawna:</strong> art. 6 ust. 1 lit. f RODO (uzasadniony interes – komunikacja i obsługa).</li>
+                </ul>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">G. Reklamacje, zwroty, roszczenia</h3>
+                <ul class="text-muted-foreground space-y-2">
+                  <li><strong class="text-foreground">Cel:</strong> obsługa reklamacji, spory, dochodzenie/obrona roszczeń.</li>
+                  <li><strong class="text-foreground">Dane:</strong> zależnie od sprawy (najczęściej e-mail, dane zakupowe, korespondencja).</li>
+                  <li><strong class="text-foreground">Podstawa prawna:</strong> art. 6 ust. 1 lit. c RODO (jeśli obowiązek prawny) i/lub art. 6 ust. 1 lit. f RODO (obrona roszczeń).</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sekcja 4 -->
+          <section id="s4" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">4. Jakie dane możemy przetwarzać?</h2>
+            <p class="text-muted-foreground mb-4">W zależności od tego, z czego korzystasz, możemy przetwarzać m.in.:</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-3">
+              <li><strong class="text-foreground">Dane identyfikacyjne i kontaktowe:</strong> e-mail, identyfikator konta; opcjonalnie imię/nazwisko.</li>
+              <li><strong class="text-foreground">Treści Użytkownika do generacji:</strong> selfie/zdjęcie twarzy, zdjęcie inspiracji, opis tekstowy, nagranie głosowe (jeśli użyjesz), wygenerowane obrazy.</li>
+              <li><strong class="text-foreground">Dane transakcyjne:</strong> informacje o zakupie i płatności (ID transakcji, status, kwota, data).</li>
+              <li><strong class="text-foreground">Dane do faktury:</strong> firma/adres/NIP – jeśli poprosisz o fakturę.</li>
+              <li><strong class="text-foreground">Dane techniczne:</strong> IP, identyfikatory sesji, logi, informacje o przeglądarce/urządzeniu (pkt 5).</li>
+            </ul>
+          </section>
+
+          <!-- Sekcja 5 -->
+          <section id="s5" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">5. Dane techniczne i logi – czym są i po co je zbieramy?</h2>
+            <p class="text-muted-foreground mb-4">
+              Tak jak większość serwisów internetowych, możemy przetwarzać dane techniczne generowane przy korzystaniu z Serwisu/Aplikacji, takie jak:
+            </p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-2">
+              <li>adres IP,</li>
+              <li>data i godzina zapytania,</li>
+              <li>typ przeglądarki i system operacyjny,</li>
+              <li>informacje o błędach i wydajności,</li>
+              <li>identyfikatory sesji/logowania (jeśli korzystasz z konta).</li>
+            </ul>
+            <p class="text-muted-foreground mt-4">
+              <strong class="text-foreground">Po co?</strong> Żeby Serwis i Aplikacja działały poprawnie, bezpiecznie i żebyśmy mogli wykrywać nadużycia oraz błędy.
+            </p>
+          </section>
+
+          <!-- Sekcja 6 -->
+          <section id="s6" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">6. Skąd mamy Twoje dane?</h2>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-3">
+              <li><strong class="text-foreground">Bezpośrednio od Ciebie</strong> – gdy zakładasz konto, korzystasz z generowania, kontaktujesz się z nami.</li>
+              <li><strong class="text-foreground">Z Twojego urządzenia/przeglądarki</strong> – dane techniczne (pkt 5).</li>
+              <li><strong class="text-foreground">Od Stripe</strong> – gdy dokonujesz płatności (status płatności, identyfikatory transakcji, dane do rozliczeń – zależnie od przebiegu płatności).</li>
+            </ul>
+          </section>
+
+          <!-- Sekcja 7 -->
+          <section id="s7" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">7. Jak dbamy o bezpieczeństwo danych?</h2>
+            <p class="text-muted-foreground mb-4">Stosujemy środki techniczne i organizacyjne adekwatne do ryzyk, m.in.:</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-2">
+              <li>szyfrowanie transmisji (HTTPS),</li>
+              <li>kontrolę dostępu,</li>
+              <li>ograniczenie dostępu do danych do osób, które muszą je mieć,</li>
+              <li>działania bezpieczeństwa i monitoring błędów w zakresie niezbędnym do utrzymania usługi.</li>
+            </ul>
+          </section>
+
+          <!-- Sekcja 8 -->
+          <section id="s8" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">8. Jak długo przechowujemy dane?</h2>
+            <p class="text-muted-foreground mb-4">Przechowujemy dane tylko tak długo, jak jest to potrzebne do celu, w jakim je zebraliśmy. Przykładowo:</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-3">
+              <li><strong class="text-foreground">Konto użytkownika</strong> – przez czas działania konta; po usunięciu konta dane mogą trafić do archiwum tylko w zakresie niezbędnym do obrony roszczeń.</li>
+              <li><strong class="text-foreground">Treści do generacji (selfie, inspiracje, opis głosowy/tekstowy)</strong> – co do zasady przez czas niezbędny do wykonania generacji i udostępnienia wyniku; mogą być przechowywane krótkotrwale technicznie, a dłużej tylko, jeżeli funkcjonalność aplikacji zakłada przechowywanie wyników w historii konta.</li>
+              <li><strong class="text-foreground">Wyniki (wygenerowane obrazy)</strong> – przez czas potrzebny do udostępnienia (np. pobrania) i/lub przez czas trwania konta, jeżeli aplikacja umożliwia przechowywanie historii wyników.</li>
+              <li><strong class="text-foreground">Dane transakcyjne i księgowe</strong> – przez okres wymagany przepisami (najczęściej 5 lat od końca roku podatkowego).</li>
+              <li><strong class="text-foreground">Korespondencja i zgłoszenia</strong> – przez czas obsługi sprawy, a następnie w archiwum do czasu przedawnienia roszczeń lub utraty przydatności (zwykle 3 lub 6 lat – zależnie od relacji i podstawy roszczenia).</li>
+              <li><strong class="text-foreground">Logi techniczne</strong> – przez okres potrzebny do zapewnienia bezpieczeństwa i diagnostyki (zwykle maksymalnie do 12 miesięcy, chyba że dłużej wymagają tego szczególne okoliczności bezpieczeństwa).</li>
+            </ul>
+          </section>
+
+          <!-- Sekcja 9 -->
+          <section id="s9" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">9. Komu możemy ujawniać dane (odbiorcy danych)?</h2>
+            <p class="text-muted-foreground mb-4">Korzystamy z usług zewnętrznych dostawców, którzy pomagają nam utrzymywać CiachNaPróbę. W zależności od funkcji, dane mogą trafiać do:</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-3">
+              <li><strong class="text-foreground">Stripe</strong> – operator płatności i Stripe Checkout (obsługa płatności i bezpieczeństwo transakcji).</li>
+              <li><strong class="text-foreground">Dostawców hostingu/infrastruktury IT</strong> – serwery, przechowywanie danych, utrzymanie aplikacji.</li>
+              <li><strong class="text-foreground">Dostawców poczty/obsługi e-mail</strong> – np. wysyłka e-maili weryfikacyjnych i komunikacji systemowej (jeśli używane).</li>
+              <li><strong class="text-foreground">Obsługi księgowej / biura rachunkowego</strong> – w zakresie rozliczeń.</li>
+              <li><strong class="text-foreground">Kancelarii prawnej</strong> – jeśli to potrzebne do dochodzenia/obrony roszczeń (w ramach tajemnicy zawodowej).</li>
+              <li><strong class="text-foreground">Uprawnionych organów</strong> – jeśli obowiązek wynika z prawa.</li>
+            </ul>
+            <div class="bg-card/50 border border-border rounded-xl p-6 mt-6">
+              <p class="text-muted-foreground">
+                <strong class="text-foreground">Ważne:</strong> nie sprzedajemy Twoich danych ani nie udostępniamy ich innym podmiotom do ich własnych celów marketingowych.
+              </p>
+            </div>
+          </section>
+
+          <!-- Sekcja 10 -->
+          <section id="s10" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">10. Czy przekazujemy dane poza EOG?</h2>
+            <p class="text-muted-foreground mb-4">
+              Możemy korzystać z dostawców, którzy przetwarzają dane poza Europejskim Obszarem Gospodarczym (np. globalne usługi IT lub płatności). W takich przypadkach stosujemy mechanizmy zgodne z RODO (np. standardowe klauzule umowne) i/lub wybieramy dostawców zapewniających odpowiedni poziom ochrony.
+            </p>
+            <p class="text-muted-foreground">
+              W szczególności – Stripe jest usługą globalną, więc dane związane z płatnościami mogą być przetwarzane również poza EOG.
+            </p>
+          </section>
+
+          <!-- Sekcja 11 -->
+          <section id="s11" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">11. Czy korzystamy z profilowania lub zautomatyzowanego podejmowania decyzji?</h2>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Nie podejmujemy wobec Ciebie decyzji wywołujących skutki prawne lub podobnie istotne wyłącznie w oparciu o zautomatyzowane przetwarzanie (w tym profilowanie).</li>
+              <li>Aplikacja wykonuje automatyczne generowanie wizualizacji na podstawie dostarczonych danych (selfie/opis), ale ma to charakter usługi „na żądanie" – nie jest to decyzja prawna ani ocena zdolności kredytowej itp.</li>
+            </ul>
+          </section>
+
+          <!-- Sekcja 12 -->
+          <section id="s12" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">12. Jakie masz prawa?</h2>
+            <p class="text-muted-foreground mb-4">Zgodnie z RODO przysługują Ci (w zależności od sytuacji):</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-2">
+              <li>prawo dostępu do danych i uzyskania kopii,</li>
+              <li>prawo sprostowania,</li>
+              <li>prawo usunięcia danych,</li>
+              <li>prawo ograniczenia przetwarzania,</li>
+              <li>prawo sprzeciwu (gdy przetwarzamy dane na podstawie art. 6 ust. 1 lit. f RODO),</li>
+              <li>prawo przenoszenia danych (gdy podstawą jest umowa lub zgoda),</li>
+              <li>prawo wycofania zgody (jeżeli dane przetwarzamy na podstawie zgody),</li>
+              <li>prawo wniesienia skargi do organu nadzorczego.</li>
+            </ul>
+            <p class="text-muted-foreground mt-4">
+              W Polsce organem nadzorczym jest Prezes Urzędu Ochrony Danych Osobowych (UODO).
+            </p>
+          </section>
+
+          <!-- Sekcja 13 -->
+          <section id="s13" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">13. Czym są cookies i podobne technologie?</h2>
+            <p class="text-muted-foreground mb-4">
+              Cookies to małe pliki tekstowe zapisywane na Twoim urządzeniu (komputer/telefon), które mogą być odczytywane przez Serwis/Aplikację.
+            </p>
+            <p class="text-muted-foreground">
+              Podobne technologie to np. local storage, identyfikatory sesji, piksele – jeżeli są wykorzystywane.
+            </p>
+          </section>
+
+          <!-- Sekcja 14 -->
+          <section id="s14" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">14. Na jakiej podstawie korzystamy z cookies?</h2>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-3">
+              <li><strong class="text-foreground">Cookies niezbędne (techniczne)</strong> – stosujemy, bo są konieczne do działania Serwisu/Aplikacji (np. utrzymanie sesji).</li>
+              <li><strong class="text-foreground">Cookies analityczne/marketingowe</strong> – jeżeli kiedyś je wdrożymy, będziemy prosić o zgodę (i umożliwimy łatwe wycofanie).</li>
+            </ul>
+          </section>
+
+          <!-- Sekcja 15 -->
+          <section id="s15" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">15. Jak zarządzać cookies?</h2>
+            <p class="text-muted-foreground mb-4">Możesz:</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-2">
+              <li>zmienić ustawienia cookies w swojej przeglądarce (blokować/usunąć),</li>
+              <li>korzystać z trybu incognito,</li>
+              <li>usuwać dane stron (cookies i cache).</li>
+            </ul>
+            <div class="bg-card/50 border border-border rounded-xl p-6 mt-6">
+              <p class="text-muted-foreground">
+                <strong class="text-foreground">Pamiętaj:</strong> zablokowanie cookies niezbędnych może spowodować, że Aplikacja nie będzie działać poprawnie (np. logowanie).
+              </p>
+            </div>
+          </section>
+
+          <!-- Sekcja 16 -->
+          <section id="s16" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">16. Cookies własne – jakie mogą występować?</h2>
+            <p class="text-muted-foreground mb-4">W Serwisie/Aplikacji mogą występować cookies techniczne, np.:</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-2">
+              <li>cookies sesyjne (utrzymanie sesji/logowania),</li>
+              <li>cookies bezpieczeństwa,</li>
+              <li>cookies preferencji (np. pamiętanie ustawień).</li>
+            </ul>
+            <p class="text-muted-foreground mt-4">
+              Nie podajemy nazw konkretnych plików cookie, bo mogą zależeć od wdrożenia technicznego i zmian w aplikacji – jeśli wdrożymy baner cookies z listą, będzie ona widoczna w panelu zgód.
+            </p>
+          </section>
+
+          <!-- Sekcja 17 -->
+          <section id="s17" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">17. Cookies i technologie podmiotów trzecich – jakie mogą występować?</h2>
+            <p class="text-muted-foreground mb-4">
+              Na dzień publikacji kluczowym podmiotem trzecim w procesie płatności jest Stripe (Stripe Checkout / Payment Link).
+            </p>
+            <p class="text-muted-foreground">
+              Jeżeli przechodzisz do Stripe Checkout, cookies i podobne technologie mogą być ustawiane przez Stripe na domenach Stripe, a Stripe może zbierać informacje o urządzeniu w celach bezpieczeństwa, uwierzytelniania, zapobiegania nadużyciom i analityki działania płatności.
+            </p>
+          </section>
+
+          <!-- Sekcja 18 -->
+          <section id="s18" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">18. Czy „śledzimy" Twoje zachowania na stronie/aplikacji?</h2>
+            <p class="text-muted-foreground mb-4">
+              Na dzień publikacji nie wdrażamy po naszej stronie narzędzi do nagrywania sesji, heatmap, pikseli reklamowych itp.
+            </p>
+            <p class="text-muted-foreground">
+              W zakresie płatności – mechanizmy Stripe mogą przetwarzać dane techniczne potrzebne do bezpiecznej realizacji płatności.
+            </p>
+          </section>
+
+          <!-- Sekcja 19 -->
+          <section id="s19" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">19. Czy kierujemy reklamy targetowane?</h2>
+            <p class="text-muted-foreground mb-4">
+              Na dzień publikacji – nie (po naszej stronie w Serwisie/Aplikacji).
+            </p>
+            <p class="text-muted-foreground">
+              Jeżeli w przyszłości wdrożymy działania marketingowe, zaktualizujemy Politykę oraz – jeśli będzie to wymagane – wdrożymy mechanizm zgód.
+            </p>
+          </section>
+
+          <!-- Sekcja 20 -->
+          <section id="s20" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">20. Jak możesz zarządzać swoją prywatnością praktycznie?</h2>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-2">
+              <li>możesz nie zakładać konta i korzystać tylko z landing page,</li>
+              <li>możesz nie kupować kredytów (korzystać z bezpłatnych funkcji, jeśli dostępne),</li>
+              <li>możesz nie korzystać z opisu głosowego (jeżeli wolisz),</li>
+              <li>możesz ograniczać cookies w przeglądarce,</li>
+              <li>możesz poprosić o usunięcie konta i danych, pisząc na <a href="mailto:adrianna@getbold.agency" class="text-primary hover:text-accent transition-colors">adrianna@getbold.agency</a>.</li>
+            </ul>
+          </section>
+
+          <!-- Sekcja 21 -->
+          <section id="s21" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">21. Czy jest jeszcze coś, o czym warto wiedzieć?</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li><strong class="text-foreground">Wgrywasz zdjęcia świadomie:</strong> nie przesyłaj zdjęć osób trzecich bez ich zgody oraz nie przesyłaj danych, których nie chcesz przetwarzać (np. w treści opisu).</li>
+              <li><strong class="text-foreground">Usługa dla osób pełnoletnich / 16+:</strong> jeżeli nie masz ukończonych 16 lat, korzystaj z usługi wyłącznie za zgodą opiekuna (zalecenie ostrożnościowe).</li>
+            </ol>
+          </section>
+
+          <!-- Sekcja 22 -->
+          <section id="s22" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">22. Zmiany w Polityce</h2>
+            <p class="text-muted-foreground mb-4">Możemy aktualizować tę Politykę, w szczególności gdy:</p>
+            <ul class="list-disc list-outside ml-6 text-muted-foreground space-y-2">
+              <li>zmienimy sposób działania aplikacji,</li>
+              <li>wdrożymy nowe narzędzia (np. analityczne),</li>
+              <li>zmienią się przepisy.</li>
+            </ul>
+            <p class="text-muted-foreground mt-4">
+              Nowa wersja będzie publikowana w Serwisie/Aplikacji, a jeśli masz konto i wdrożymy komunikację e-mail – możemy Cię o zmianie powiadomić.
+            </p>
+          </section>
+
+          <!-- Załącznik -->
+          <section id="zalacznik" class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">Załącznik: Wykaz narzędzi wykorzystujących cookies (na dzień publikacji)</h2>
+            <div class="space-y-4">
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">1. Cookies niezbędne Serwisu/Aplikacji</h3>
+                <p class="text-muted-foreground">
+                  Techniczne cookies sesyjne i bezpieczeństwa (utrzymanie sesji, logowanie, ochrona przed nadużyciami).
+                </p>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">2. Stripe Checkout / Payment Link (buy.stripe.com)</h3>
+                <p class="text-muted-foreground">
+                  Cookies i podobne technologie wykorzystywane przez Stripe w związku z realizacją płatności (m.in. bezpieczeństwo i przeciwdziałanie nadużyciom).
+                </p>
+              </div>
+
+              <div class="bg-card/50 border border-border rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-foreground mb-2">3. Stripe Link (jeśli dostępne w Stripe Checkout)</h3>
+                <p class="text-muted-foreground">
+                  Usługa Stripe, która może wykorzystywać cookies do rozpoznawania użytkownika i ułatwienia płatności (zapamiętanie ustawień / metody płatności – zależnie od tego, co wybierzesz).
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="/" class="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 19-7-7 7-7"/>
+              <path d="M19 12H5"/>
+            </svg>
+            Wróć na stronę główną
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <Footer />
+  </main>
+</Layout>

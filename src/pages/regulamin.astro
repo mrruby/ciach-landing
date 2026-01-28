@@ -1,0 +1,312 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Regulamin - CiachNaPróbę"
+  description="Regulamin sprzedaży internetowej i świadczenia usług drogą elektroniczną Ciach Na Próbę."
+>
+  <main class="min-h-screen bg-background overflow-hidden">
+    <div class="fixed inset-0 bg-[linear-gradient(180deg,#12002B_0%,#2A0F54_50%,#12002B_100%)] -z-10"></div>
+    <Header />
+
+    <article class="pt-32 pb-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <header class="mb-12 text-center">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            Regulamin
+          </h1>
+          <p class="text-lg text-muted-foreground">
+            Sprzedaży internetowej i świadczenia usług drogą elektroniczną „Ciach Na Próbę"
+          </p>
+          <p class="text-sm text-muted-foreground mt-4">
+            Data ostatniej aktualizacji: 26.01.2026<br />
+            Obowiązuje od dnia: 26.01.2026
+          </p>
+        </header>
+
+        <div class="prose prose-invert max-w-none">
+          <p class="text-muted-foreground leading-relaxed mb-8">
+            Jeżeli tu jesteś, to znaczy, że cenisz transparentność. Poniżej znajdziesz zasady działania usługi „Ciach Na Próbę", w tym zakupu pakietu 15 kredytów umożliwiających generowanie wizualizacji fryzur w aplikacji.
+          </p>
+
+          <div class="bg-card/50 border border-border rounded-xl p-6 mb-12">
+            <h2 class="text-xl font-semibold text-foreground mb-4">Dane Sprzedawcy / Usługodawcy / Administratora:</h2>
+            <p class="text-muted-foreground mb-2">
+              <strong class="text-foreground">Slow Marketing Adrianna Promis-Urbas</strong><br />
+              ul. Mała 2, 47-400 Racibórz, Polska<br />
+              NIP: 6391970911<br />
+              Kontakt e-mail: <a href="mailto:adrianna@getbold.agency" class="text-primary hover:text-accent transition-colors">adrianna@getbold.agency</a>
+            </p>
+            <h3 class="text-lg font-semibold text-foreground mt-6 mb-2">Serwis i Aplikacja:</h3>
+            <ul class="text-muted-foreground space-y-1">
+              <li>Serwis (strona informacyjna): <a href="https://ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://ciachnaprobe.pl/</a></li>
+              <li>Aplikacja (usługa): <a href="https://app.ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://app.ciachnaprobe.pl/</a></li>
+              <li>Zakup pakietu kredytów może być realizowany także poprzez stronę płatności Stripe</li>
+            </ul>
+          </div>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 1. Definicje</h2>
+            <p class="text-muted-foreground mb-4">Na potrzeby niniejszego Regulaminu przyjmuje się następujące znaczenie pojęć:</p>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li><strong class="text-foreground">Aplikacja</strong> – aplikacja webowa dostępna pod adresem https://app.ciachnaprobe.pl/, umożliwiająca korzystanie z Usługi, w tym generowanie Wizualizacji.</li>
+              <li><strong class="text-foreground">Serwis</strong> – strona internetowa dostępna pod adresem https://ciachnaprobe.pl/ oraz jej rozszerzenia.</li>
+              <li><strong class="text-foreground">Sprzedawca / Usługodawca</strong> – Slow Marketing Adrianna Promis-Urbas z siedzibą w Raciborzu, ul. Mała 2, 47-400, NIP 6391970911.</li>
+              <li><strong class="text-foreground">Kupujący</strong> – osoba fizyczna, osoba prawna lub jednostka organizacyjna wyposażona w zdolność prawną, zawierająca Umowę ze Sprzedawcą.</li>
+              <li><strong class="text-foreground">Konsument</strong> – osoba fizyczna, zawierająca Umowę niezwiązaną bezpośrednio z jej działalnością gospodarczą lub zawodową.</li>
+              <li><strong class="text-foreground">Przedsiębiorca na prawach konsumenta (PNPK)</strong> – osoba fizyczna zawierająca Umowę bezpośrednio związaną z jej działalnością gospodarczą, gdy z treści Umowy wynika, że nie ma ona charakteru zawodowego (zgodnie z ustawą o prawach konsumenta).</li>
+              <li><strong class="text-foreground">Konto</strong> – indywidualne konto użytkownika w Aplikacji, powiązane co najmniej z adresem e-mail, umożliwiające korzystanie z Usługi oraz przypisywanie Kredytów.</li>
+              <li><strong class="text-foreground">Usługa</strong> – usługa cyfrowa świadczona drogą elektroniczną w Aplikacji, polegająca w szczególności na wygenerowaniu Wizualizacji na podstawie danych wprowadzonych przez Użytkownika (np. selfie, inspiracje, opis tekstowy lub głosowy).</li>
+              <li><strong class="text-foreground">Wizualizacja</strong> – rezultat działania Usługi (np. obraz/obrazy przedstawiające symulację fryzury), generowany automatycznie z wykorzystaniem narzędzi/algorytmów AI.</li>
+              <li><strong class="text-foreground">Kredyt</strong> – jednostka rozliczeniowa uprawniająca do wykonania 1 (jednej) Generacji w Aplikacji.</li>
+              <li><strong class="text-foreground">Generacja</strong> – pojedyncze uruchomienie procesu generowania Wizualizacji w Aplikacji, które zużywa Kredyt.</li>
+              <li><strong class="text-foreground">Produkt</strong> – oferowany odpłatnie pakiet kredytów: „Pakiet 15 Kredytów".</li>
+              <li><strong class="text-foreground">Pakiet 15 Kredytów</strong> – Produkt w postaci 15 (piętnastu) Kredytów przypisywanych do Konta Kupującego.</li>
+              <li><strong class="text-foreground">Treści Użytkownika</strong> – materiały dostarczane przez Użytkownika w związku z korzystaniem z Usługi (np. zdjęcia/obrazy, opis tekstowy, nagranie głosowe).</li>
+              <li><strong class="text-foreground">Umowa</strong> – umowa zawierana pomiędzy Sprzedawcą a Kupującym, której przedmiotem jest sprzedaż Pakietu 15 Kredytów oraz świadczenie Usługi.</li>
+              <li><strong class="text-foreground">Cena</strong> – wartość wyrażona w jednostkach pieniężnych, którą Kupujący jest zobowiązany zapłacić Sprzedawcy za Produkt.</li>
+              <li><strong class="text-foreground">Operator płatności</strong> – Stripe (platforma płatności, do której Kupujący może zostać przekierowany w celu opłacenia zamówienia).</li>
+              <li><strong class="text-foreground">Trwały nośnik</strong> – materiał lub narzędzie umożliwiające Kupującemu przechowywanie informacji kierowanych do niego w sposób umożliwiający dostęp do nich w przyszłości przez czas odpowiedni do celów, jakim te informacje służą (np. e-mail).</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 2. Postanowienia wstępne</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Sprzedawca prowadzi sprzedaż Produktu oraz świadczy Usługę drogą elektroniczną za pośrednictwem Aplikacji.</li>
+              <li>Regulamin określa zasady i warunki:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>korzystania z Serwisu oraz Aplikacji,</li>
+                  <li>zakupu Pakietu 15 Kredytów,</li>
+                  <li>korzystania z Kredytów i Generacji,</li>
+                  <li>postępowania reklamacyjnego i zasad odpowiedzialności za zgodność Usługi z Umową,</li>
+                  <li>prawa odstąpienia od Umowy (jeśli przysługuje),</li>
+                  <li>zasad zamieszczania Treści Użytkownika oraz zgłaszania nielegalnych treści.</li>
+                </ol>
+              </li>
+              <li>Regulamin ma zastosowanie do Umów zawieranych na odległość.</li>
+              <li>Zawarcie Umowy nie może nastąpić w sposób anonimowy – Kupujący powinien podać prawdziwe i kompletne dane wymagane w procesie płatności i/lub utworzenia Konta.</li>
+              <li>Zakazane jest dostarczanie Treści Użytkownika o charakterze bezprawnym.</li>
+              <li>O ile bezwzględnie obowiązujące przepisy prawa nie stanowią inaczej, Umowy zawierane są w języku polskim i podlegają prawu polskiemu.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 3. Wymagania techniczne</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Do korzystania z Serwisu i Aplikacji niezbędne są:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>dostęp do Internetu,</li>
+                  <li>aktualny system operacyjny,</li>
+                  <li>aktualna przeglądarka internetowa z włączoną obsługą JavaScript i plików cookies,</li>
+                  <li>aktywny adres e-mail.</li>
+                </ol>
+              </li>
+              <li>Do wykonania Generacji może być dodatkowo wymagane:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>urządzenie z aparatem (jeśli Użytkownik chce wykonać/załączyć selfie),</li>
+                  <li>możliwość przesyłania plików (np. zdjęć).</li>
+                </ol>
+              </li>
+              <li>Sprzedawca może okresowo prowadzić prace techniczne (przerwy serwisowe). Sprzedawca dołoży starań, aby przerwy były jak najmniej uciążliwe.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 4. Konto w Aplikacji</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Korzystanie z Usługi (w tym wykorzystywanie Kredytów) co do zasady wymaga posiadania Konta w Aplikacji.</li>
+              <li>Konto tworzy się poprzez rejestrację w Aplikacji oraz potwierdzenie adresu e-mail (jeśli Aplikacja tego wymaga).</li>
+              <li>Użytkownik ponosi odpowiedzialność za zachowanie poufności danych dostępowych do Konta oraz za działania wykonane po zalogowaniu na Konto.</li>
+              <li>Użytkownik może w każdym czasie zrezygnować z Konta, kontaktując się ze Sprzedawcą. Rezygnacja z Konta nie wpływa na Umowy już zawarte (np. obowiązki rozliczeniowe), o ile przepisy bezwzględnie obowiązujące nie stanowią inaczej.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 5. Produkt i zasady korzystania z Kredytów</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Produkt: Pakiet 15 Kredytów.</li>
+              <li>Jeden Kredyt uprawnia do wykonania jednej Generacji w Aplikacji.</li>
+              <li>Kredyty:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>są przypisywane do Konta i służą wyłącznie do korzystania z Usługi w Aplikacji,</li>
+                  <li>nie stanowią środka płatniczego ani pieniądza elektronicznego,</li>
+                  <li>nie podlegają wymianie na gotówkę,</li>
+                  <li>są co do zasady niezbywalne (zakaz odsprzedaży, przenoszenia, cesji), chyba że Sprzedawca wyrazi na to wyraźną zgodę na piśmie.</li>
+                </ol>
+              </li>
+              <li>Moment zużycia Kredytu:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>Kredyt uznaje się za zużyty w momencie rozpoczęcia Generacji (uruchomienia procesu generowania Wizualizacji).</li>
+                </ol>
+              </li>
+              <li>Wizualizacje mają charakter poglądowy i są generowane automatycznie. Wyniki mogą się różnić w zależności od jakości materiałów wejściowych (np. selfie, inspiracje) oraz ustawień Usługi.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 6. Składanie zamówienia i zawarcie Umowy</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Zakup Pakietu 15 Kredytów następuje w szczególności poprzez:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>wybranie opcji zakupu w Aplikacji/Serwisie (np. przycisk „Kup teraz"),</li>
+                  <li>przekierowanie Kupującego do strony płatności Operatora płatności (Stripe),</li>
+                  <li>dokonanie płatności oraz akceptację wymaganych zgód i oświadczeń,</li>
+                  <li>przypisanie Kredytów do Konta Kupującego po autoryzacji płatności.</li>
+                </ol>
+              </li>
+              <li>Umowa zostaje zawarta z chwilą potwierdzenia przez Sprzedawcę otrzymania płatności (np. poprzez automatyczne przypisanie Kredytów do Konta oraz/lub przesłanie potwierdzenia na e-mail).</li>
+              <li>Sprzedawca może odmówić realizacji zamówienia, jeżeli:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>poweźmie uzasadnione wątpliwości co do prawdziwości danych,</li>
+                  <li>wystąpi błąd techniczny uniemożliwiający prawidłowe rozliczenie,</li>
+                  <li>płatność nie zostanie skutecznie zautoryzowana.</li>
+                </ol>
+                W takim przypadku, jeśli płatność została pobrana, Sprzedawca dokona zwrotu.
+              </li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 7. Cena i płatności</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Cena Produktu jest każdorazowo wskazywana w Aplikacji/Serwisie oraz na stronie płatności Stripe przed finalizacją zakupu.</li>
+              <li>Wszystkie ceny są cenami brutto (z podatkami), o ile wyraźnie nie wskazano inaczej.</li>
+              <li>Płatności elektroniczne (np. kartą) obsługiwane są przez Operatora płatności – Stripe.</li>
+              <li>Sprzedawca wystawia faktury i przesyła je drogą elektroniczną, na żądanie Kupującego, na adres e-mail podany przy zakupie.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 8. Dostarczenie Produktu i świadczenie Usługi</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Dostarczenie Produktu (przypisanie 15 Kredytów do Konta) następuje niezwłocznie po pozytywnej autoryzacji płatności, nie później niż w ciągu 24 godzin.</li>
+              <li>Jeżeli Kupujący nie posiada Konta, Sprzedawca może wymagać utworzenia Konta w celu przypisania Kredytów.</li>
+              <li>Jeżeli adres e-mail użyty w płatności różni się od adresu e-mail Konta, przypisanie Kredytów może wymagać weryfikacji – w takim przypadku Kupujący powinien skontaktować się ze Sprzedawcą.</li>
+              <li>Sprzedawca nie gwarantuje, że Usługa będzie działać bez przerw lub błędów, ale dołoży starań, aby działała prawidłowo oraz aby usuwać nieprawidłowości w rozsądnym czasie.</li>
+              <li>Sprzedawca może wprowadzać zmiany w Aplikacji/Usłudze (np. poprawki, rozwój funkcji), o ile nie pozbawia to Kupującego praw nabytych (np. możliwości wykorzystania zakupionych Kredytów).</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 9. Prawo odstąpienia od Umowy (Konsument / PNPK)</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Konsument lub PNPK ma prawo odstąpić od Umowy zawartej na odległość bez podania przyczyny w terminie 14 dni od dnia zawarcia Umowy – o ile prawo to nie zostało wyłączone zgodnie z ust. 3–6 poniżej.</li>
+              <li>Aby odstąpić od Umowy, Konsument/PNPK musi złożyć Sprzedawcy jednoznaczne oświadczenie (np. e-mail na adres: <a href="mailto:adrianna@getbold.agency" class="text-primary hover:text-accent transition-colors">adrianna@getbold.agency</a>).</li>
+              <li>Z uwagi na charakter Produktu (treść cyfrowa/usługa cyfrowa dostarczana bez nośnika materialnego) Sprzedawca może rozpocząć świadczenie (dostarczyć Kredyty i umożliwić korzystanie z Usługi) przed upływem terminu na odstąpienie wyłącznie po spełnieniu warunków ustawowych, w szczególności:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>po uzyskaniu wyraźnej i uprzedniej zgody Konsumenta/PNPK na rozpoczęcie świadczenia przed upływem 14 dni,</li>
+                  <li>po poinformowaniu Konsumenta/PNPK o utracie prawa odstąpienia i przyjęciu tego do wiadomości,</li>
+                  <li>po przekazaniu potwierdzenia zawarcia Umowy na trwałym nośniku (np. e-mail).</li>
+                </ol>
+              </li>
+              <li>Jeżeli spełnione są warunki z ust. 3, Konsument/PNPK traci prawo odstąpienia od Umowy w zakresie, w jakim rozpoczęto świadczenie (w szczególności po dostarczeniu Kredytów i umożliwieniu korzystania z Usługi).</li>
+              <li>Jeżeli Kupujący nie udzieli zgody, o której mowa w ust. 3 lit. a), Sprzedawca może wstrzymać dostarczenie Kredytów do upływu terminu na odstąpienie.</li>
+              <li>W przypadku skutecznego odstąpienia (gdy prawo odstąpienia przysługuje), Sprzedawca zwraca wszystkie otrzymane od Konsumenta/PNPK płatności niezwłocznie, nie później niż w terminie 14 dni od dnia otrzymania oświadczenia o odstąpieniu, przy użyciu takiego samego sposobu płatności, jakiego użyto w transakcji, chyba że Kupujący wyrazi zgodę na inny sposób.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 10. Reklamacje i odpowiedzialność za zgodność Usługi z Umową</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Każdemu Kupującemu przysługuje prawo do złożenia reklamacji dotyczącej działania Aplikacji, Usługi lub realizacji Umowy.</li>
+              <li>Reklamacje należy kierować na adres e-mail: <a href="mailto:adrianna@getbold.agency" class="text-primary hover:text-accent transition-colors">adrianna@getbold.agency</a>.</li>
+              <li>Zaleca się podanie w reklamacji: danych identyfikujących Kupującego (np. e-mail Konta), opisu problemu, daty jego wystąpienia oraz żądania.</li>
+              <li>Sprzedawca udzieli odpowiedzi na reklamację w terminie 14 dni od jej otrzymania.</li>
+              <li>W przypadku Konsumentów i PNPK odpowiedzialność Sprzedawcy za zgodność Usługi cyfrowej z Umową określają przepisy ustawy o prawach konsumenta (rozdz. dotyczący treści i usług cyfrowych). Kupujący może w szczególności żądać doprowadzenia Usługi do zgodności z Umową, a w przewidzianych prawem przypadkach – obniżenia Ceny lub odstąpienia od Umowy.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 11. Treści Użytkownika, zasady korzystania i zakazy</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Użytkownik może dostarczać Treści Użytkownika wyłącznie w zakresie niezbędnym do skorzystania z Usługi.</li>
+              <li>Użytkownik oświadcza, że przysługują mu prawa do Treści Użytkownika lub posiada wymagane zgody (np. na wykorzystanie wizerunku osoby znajdującej się na zdjęciu).</li>
+              <li>Zabronione jest dostarczanie Treści Użytkownika:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>niezgodnych z prawem,</li>
+                  <li>naruszających prawa osób trzecich,</li>
+                  <li>zawierających treści pornograficzne, przemocowe, nawołujące do nienawiści,</li>
+                  <li>stanowiących spam lub niezamówione treści reklamowe,</li>
+                  <li>które mogą zakłócać działanie Aplikacji (np. złośliwe oprogramowanie).</li>
+                </ol>
+              </li>
+              <li>Sprzedawca może zablokować Konto lub ograniczyć dostęp do Usługi, jeżeli Użytkownik narusza Regulamin lub prawo.</li>
+              <li>Zgłaszanie nielegalnych treści:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>Zgłoszenia należy kierować na adres e-mail: <a href="mailto:adrianna@getbold.agency" class="text-primary hover:text-accent transition-colors">adrianna@getbold.agency</a>.</li>
+                  <li>Zgłoszenie powinno zawierać: uzasadnienie, lokalizację treści (jeśli możliwe), dane kontaktowe zgłaszającego.</li>
+                  <li>Sprzedawca rozpatrzy zgłoszenie w rozsądnym terminie i poinformuje zgłaszającego o decyzji, o ile będzie to możliwe.</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 12. Prawa własności intelektualnej</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Aplikacja, Serwis, ich elementy oraz materiały (w tym układ, grafiki, teksty, rozwiązania techniczne) mogą stanowić utwory w rozumieniu prawa autorskiego i są chronione.</li>
+              <li>Kupujący uzyskuje prawo do korzystania z Aplikacji oraz Wizualizacji wyłącznie na własny użytek osobisty, chyba że Sprzedawca wskaże inaczej lub udzieli odrębnej licencji.</li>
+              <li>Zabronione jest:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>odsprzedawanie dostępu do Aplikacji lub Kredytów,</li>
+                  <li>obchodzenie zabezpieczeń,</li>
+                  <li>wykorzystywanie Aplikacji w sposób sprzeczny z prawem lub Regulaminem.</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 13. Dane osobowe i cookies</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Administratorem danych osobowych jest Sprzedawca.</li>
+              <li>Serwis i Aplikacja wykorzystują pliki cookies i podobne technologie.</li>
+              <li>Szczegółowe informacje o przetwarzaniu danych osobowych oraz cookies znajdują się w Polityce Prywatności i Polityce Cookies udostępnionych w Serwisie/Aplikacji (linki w stopce Serwisu).</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 14. Pozasądowe sposoby rozpatrywania sporów</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Konsument może skorzystać z pozasądowych sposobów rozpatrywania reklamacji i dochodzenia roszczeń, w szczególności:
+                <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
+                  <li>stałych polubownych sądów konsumenckich,</li>
+                  <li>mediacji przy Inspekcji Handlowej,</li>
+                  <li>pomocy miejskich/powiatowych rzeczników konsumentów.</li>
+                </ol>
+              </li>
+              <li>Informacje na temat pozasądowego rozwiązywania sporów konsumenckich można znaleźć m.in. na stronie: <a href="https://polubowne.uokik.gov.pl" class="text-primary hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">https://polubowne.uokik.gov.pl</a>.</li>
+              <li>Sprzedawca informuje, że unijna platforma ODR (Online Dispute Resolution) została wyłączona i nie jest już dostępna.</li>
+            </ol>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 15. Postanowienia końcowe</h2>
+            <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
+              <li>Sprzedawca zastrzega sobie prawo do wprowadzania zmian w Regulaminie z ważnych przyczyn (np. zmiana przepisów prawa, zmiany technologiczne, zmiany sposobów płatności, zmiany w funkcjonalności Aplikacji).</li>
+              <li>Do Umów zawartych przed zmianą Regulaminu stosuje się Regulamin obowiązujący w chwili zawarcia Umowy, chyba że bezwzględnie obowiązujące przepisy stanowią inaczej.</li>
+              <li>O zmianie Regulaminu Sprzedawca poinformuje poprzez publikację w Serwisie oraz, jeśli dotyczy, wiadomością e-mail do Użytkowników posiadających Konto (w zakresie, w jakim zmiana dotyczy trwających Umów).</li>
+              <li>Wszelkie spory związane z Umowami będą rozpatrywane przez polski sąd powszechny właściwy ze względu na miejsce wykonywania działalności przez Sprzedawcę. Postanowienie to nie ogranicza uprawnień Konsumentów i PNPK, dla których właściwość sądu ustala się na zasadach ogólnych.</li>
+            </ol>
+          </section>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="/" class="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 19-7-7 7-7"/>
+              <path d="M19 12H5"/>
+            </svg>
+            Wróć na stronę główną
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <Footer />
+  </main>
+</Layout>
