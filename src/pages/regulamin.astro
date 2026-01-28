@@ -22,8 +22,8 @@ import Footer from '../components/Footer.astro';
             Sprzedaży internetowej i świadczenia usług drogą elektroniczną „Ciach Na Próbę"
           </p>
           <p class="text-sm text-muted-foreground mt-4">
-            Data ostatniej aktualizacji: 26.01.2026<br />
-            Obowiązuje od dnia: 26.01.2026
+            Data ostatniej aktualizacji: 28.01.2026<br />
+            Obowiązuje od dnia: 28.01.2026
           </p>
         </header>
 
@@ -44,7 +44,7 @@ import Footer from '../components/Footer.astro';
             <ul class="text-muted-foreground space-y-1">
               <li>Serwis (strona informacyjna): <a href="https://ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://ciachnaprobe.pl/</a></li>
               <li>Aplikacja (usługa): <a href="https://app.ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://app.ciachnaprobe.pl/</a></li>
-              <li>Zakup pakietu kredytów może być realizowany także poprzez stronę płatności Stripe</li>
+              <li>Zakup pakietu kredytów realizowany jest w Aplikacji poprzez podstronę: <a href="https://app.ciachnaprobe.pl/buy" class="text-primary hover:text-accent transition-colors">app.ciachnaprobe.pl/buy</a>, a płatność obsługuje Stripe Checkout</li>
             </ul>
           </div>
 
@@ -68,7 +68,7 @@ import Footer from '../components/Footer.astro';
               <li><strong class="text-foreground">Treści Użytkownika</strong> – materiały dostarczane przez Użytkownika w związku z korzystaniem z Usługi (np. zdjęcia/obrazy, opis tekstowy, nagranie głosowe).</li>
               <li><strong class="text-foreground">Umowa</strong> – umowa zawierana pomiędzy Sprzedawcą a Kupującym, której przedmiotem jest sprzedaż Pakietu 15 Kredytów oraz świadczenie Usługi.</li>
               <li><strong class="text-foreground">Cena</strong> – wartość wyrażona w jednostkach pieniężnych, którą Kupujący jest zobowiązany zapłacić Sprzedawcy za Produkt.</li>
-              <li><strong class="text-foreground">Operator płatności</strong> – Stripe (platforma płatności, do której Kupujący może zostać przekierowany w celu opłacenia zamówienia).</li>
+              <li><strong class="text-foreground">Operator płatności</strong> – Stripe (platforma płatności, której formularz płatności jest wyświetlany w Aplikacji w ramach procesu zakupu).</li>
               <li><strong class="text-foreground">Trwały nośnik</strong> – materiał lub narzędzie umożliwiające Kupującemu przechowywanie informacji kierowanych do niego w sposób umożliwiający dostęp do nich w przyszłości przez czas odpowiedni do celów, jakim te informacje służą (np. e-mail).</li>
             </ol>
           </section>
@@ -153,7 +153,8 @@ import Footer from '../components/Footer.astro';
               <li>Zakup Pakietu 15 Kredytów następuje w szczególności poprzez:
                 <ol class="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
                   <li>wybranie opcji zakupu w Aplikacji/Serwisie (np. przycisk „Kup teraz"),</li>
-                  <li>przekierowanie Kupującego do strony płatności Operatora płatności (Stripe),</li>
+                  <li>przejście do strony zakupu w Aplikacji (app.ciachnaprobe.pl/buy),</li>
+                  <li>wypełnienie formularza płatności Stripe Checkout wyświetlanego w Aplikacji,</li>
                   <li>dokonanie płatności oraz akceptację wymaganych zgód i oświadczeń,</li>
                   <li>przypisanie Kredytów do Konta Kupującego po autoryzacji płatności.</li>
                 </ol>
@@ -173,7 +174,7 @@ import Footer from '../components/Footer.astro';
           <section class="mb-10">
             <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">§ 7. Cena i płatności</h2>
             <ol class="list-decimal list-outside ml-6 text-muted-foreground space-y-3">
-              <li>Cena Produktu jest każdorazowo wskazywana w Aplikacji/Serwisie oraz na stronie płatności Stripe przed finalizacją zakupu.</li>
+              <li>Cena Produktu jest każdorazowo wskazywana w Aplikacji/Serwisie (w tym na stronie zakupu app.ciachnaprobe.pl/buy) oraz w procesie płatności Stripe Checkout przed finalizacją zakupu.</li>
               <li>Wszystkie ceny są cenami brutto (z podatkami), o ile wyraźnie nie wskazano inaczej.</li>
               <li>Płatności elektroniczne (np. kartą) obsługiwane są przez Operatora płatności – Stripe.</li>
               <li>Sprzedawca wystawia faktury i przesyła je drogą elektroniczną, na żądanie Kupującego, na adres e-mail podany przy zakupie.</li>

@@ -38,7 +38,7 @@ import Footer from '../components/Footer.astro';
             <ul class="text-muted-foreground space-y-2">
               <li>strony informacyjnej (landing page) CiachNaPróbę: <a href="https://ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://ciachnaprobe.pl/</a></li>
               <li>aplikacji webowej CiachNaPróbę: <a href="https://app.ciachnaprobe.pl/" class="text-primary hover:text-accent transition-colors">https://app.ciachnaprobe.pl/</a></li>
-              <li>płatności realizowanych przez Stripe (m.in. checkout): https://buy.stripe.com/… (dalej: „Stripe Checkout")</li>
+              <li>procesu zakupu w Aplikacji (podstrona <a href="https://app.ciachnaprobe.pl/buy" class="text-primary hover:text-accent transition-colors">app.ciachnaprobe.pl/buy</a>) oraz płatności realizowanych przez Stripe Checkout (dalej: „Stripe Checkout")</li>
             </ul>
           </div>
 
@@ -363,10 +363,10 @@ import Footer from '../components/Footer.astro';
           <section id="s17" class="mb-10">
             <h2 class="text-2xl font-bold text-foreground mb-6 pb-2 border-b border-border">17. Cookies i technologie podmiotów trzecich – jakie mogą występować?</h2>
             <p class="text-muted-foreground mb-4">
-              Na dzień publikacji kluczowym podmiotem trzecim w procesie płatności jest Stripe (Stripe Checkout / Payment Link).
+              Na dzień publikacji kluczowym podmiotem trzecim w procesie płatności jest Stripe (Stripe Checkout).
             </p>
             <p class="text-muted-foreground">
-              Jeżeli przechodzisz do Stripe Checkout, cookies i podobne technologie mogą być ustawiane przez Stripe na domenach Stripe, a Stripe może zbierać informacje o urządzeniu w celach bezpieczeństwa, uwierzytelniania, zapobiegania nadużyciom i analityki działania płatności.
+              W ramach procesu zakupu na stronie app.ciachnaprobe.pl/buy wykorzystywana jest biblioteka Stripe.js, która może ustawiać cookies i podobne technologie na naszej domenie oraz domenach Stripe w celach bezpieczeństwa, uwierzytelniania, zapobiegania nadużyciom i analityki działania płatności.
             </p>
           </section>
 
@@ -439,7 +439,7 @@ import Footer from '../components/Footer.astro';
               </div>
 
               <div class="bg-card/50 border border-border rounded-xl p-6">
-                <h3 class="text-lg font-semibold text-foreground mb-2">2. Stripe Checkout / Payment Link (buy.stripe.com)</h3>
+                <h3 class="text-lg font-semibold text-foreground mb-2">2. Stripe Checkout (Stripe.js)</h3>
                 <p class="text-muted-foreground">
                   Cookies i podobne technologie wykorzystywane przez Stripe w związku z realizacją płatności (m.in. bezpieczeństwo i przeciwdziałanie nadużyciom).
                 </p>
